@@ -1,0 +1,45 @@
+# === Secrets and credentials (REQUIRED by mesoneer AI usage policy) ===
+.env
+.env.*
+.env.local
+.env.*.local
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+**/secret*
+**/*credential*
+
+# === Build artefacts (reduce noise and token usage) ===
+target/
+dist/
+build/
+out/
+.gradle/
+node_modules/
+.pnpm-store/
+**/__pycache__/
+*.class
+*.jar
+*.war
+
+# === IDE and OS noise ===
+.idea/
+.vscode/settings.json
+.DS_Store
+Thumbs.db
+*.iml
+*.ipr
+*.iws
+
+# === Large generated files ===
+*.lock
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# === Claude Code internals ===
+.git/
+.claude/
