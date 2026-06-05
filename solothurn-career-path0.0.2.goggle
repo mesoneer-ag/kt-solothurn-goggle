@@ -1,0 +1,12 @@
+! name: Solothurn Career Path
+! description: Show only results from Solothurn Career Path in Brave Search
+! public: true
+! author: Jaden Scheidegger
+
+! Change default so that anything NOT matching an instruction is removed
+$discard
+
+! Keep and strongly boost Solothurn Career Path (allow subdomains)
+*karriere.so.ch/*$boost=10
+*karriere.so.ch/stellenmarkt/offene-stellen/*$boost=10
+*so.ch/verwaltung/finanzdepartement/personalamt/*$boost=10
